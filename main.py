@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-EXECUTABLE_PATH = "HeticRayTracer.exe"  
+EXECUTABLE_PATH = "/app/HeticRayTracer.exe"  
 
 @app.get("/generate")
 def generate_image(seed: int):
