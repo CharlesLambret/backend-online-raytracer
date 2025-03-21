@@ -23,7 +23,7 @@ app.add_middleware(
 
 EXECUTABLE_PATH = "/app/HeticRayTracer.exe"  
 
-@app.get("/generate")
+@app.get("/raytracer")
 def generate_image(seed: int):
     image_name = f"output_{seed}.png"
     
